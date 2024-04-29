@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(40, 90, 253);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgba(241, 241, 241, 0.699);
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    margin: 1em 0;
+    & h2{
+      background-color: rgb(228, 250, 250);
+      margin: 1em;
+    border-radius: 20px;
+     animation: effect 2s alternate-reverse infinite;
+    }
+}
+main {
+    border: 2px solid rgb(134, 233, 225);
+    border-radius: 20px;
+    height: 100vh;
+    background-image: url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/07/dragon-ball-z-critica-capitulo-207-goten-videl-volaron-primera-vez-3085232.jpg?tf=3840x);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #e0f5fad7;
+    box-shadow: 0 0 30px 20px white;
+    border-radius: 50%;
+    animation: loader 2s alternate-reverse infinite;
+    transform: translateY(40px) translateX(-2px);
+}
+
+
+@keyframes loader {
+    100% {
+        scale: 1.8;
+        background-color: #bafff6d7;
+    }
+}
+@keyframes effect {
+     100%{
+        color: aliceblue;
+        background-color: rgb(85, 211, 167);
+     }
+}
+
+@media (min-width: 678px) and (max-width: 1880px) {
+    main{
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }   
+}
