@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Exercise 1 - Class 12</title>
+    <script src="./script.js">
+        window.addEventListener('DOMContentLoaded', () => { })</script>
+    </script>
 </head>
+
 <body>
     <header>
         <h1>Exercise 1 - Class 12</h1>
     </header>
     <main>
-        <h1>Formulary of new user </h1>
+        <h1>¡Create New SpaceUser!</h1>
         <div class="form-container">
             <form>
-                <label for="firstName">First Name:
-                    <input type="text" placeholder="Insert your first name">
-                </label>
-                <label for="lastName">Last Name:
-                    <input type="text" placeholder="Insert your last name">
-                </label>
-                <label for="userName">User Name:
-                    <input type="text" placeholder="Insert your user name">
-                </label>
-                <label for="password">Password:
-                    <input type="password" placeholder="Insert your password">
-                </label>
-                <label for="confirmPassword">Confirm Password:
-                    <input type="password" placeholder="Repeat your password">
-                </label>
-                <label for="email">Email:
-                    <input type="email" placeholder="Insert your email">
-                </label>
-                <label for="date">Birthday:
-                    <input type="date" placeholder="Insert your birthday">
-                </label>
-                <label for="newsletter">Do you wish to subscribe on this page for more information?: 
-                    <input type="checkbox" name="newsletter"    >
-                </label>
-                <button>Submit</button>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" placeholder="Insert your first name">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" placeholder="Insert your last name">
+                <label for="userName">User Name:</label>
+                <input type="text" id="userName" placeholder="Insert your user name">
+                <label for="password">Password:</label>
+                <input type="password" required id="password" placeholder="Insert your password">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" required id="confirmPassword" placeholder="Repeat your password">
+                <label for="email">Email:</label>
+                <input type="email" required id="email" placeholder="Insert your email">
+                <label for="dateBirthday">Birthday:</label>
+                <input type="date" id="dateBirthday" placeholder="Insert your birthday">
+                <label for="newsletter">Do you wish to subscribe on this page for more information?:</label>
+                <input type="checkbox" name="newsletter">
+                <button class="btn">Submit</button>
             </form>
+            <div>
+                <h1>¡Welcome to the spacewordl!</h1>
+                <p>You recive the important information if you suscribe to my page! </p>
+            </div>
         </div>
     </main>
 </body>
+
 </html>
