@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+}
+header {
+    background-color: #6892d1;
+    margin-bottom: 2em;
+}
+
+section {
+    margin: 0 auto;
+    width: 300px;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 7px solid #fafafa;
+    border-radius: 20px;
+    background-color: #b5cdf1;
+    overflow: hidden;
+    animation: arg 1s alternate-reverse infinite;
+}
+
+.banner-container {
+    opacity: 0.8;
+    background-image: url(https://radiografica.org.ar/wp-content/uploads/2022/12/Argentina-1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom: 7px solid white;
+ }
+
+.img-container {
+    position: relative;
+    top: -80px;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 7px solid white;
+    overflow: hidden;
+    animation: arg 1s alternate-reverse infinite;
+    & img {
+        position: relative;
+        right: 70px;
+    }
+}
+
+.info-container {
+    position: relative;
+    top: -50px;
+}
+
+.red-container {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    & img {
+        width: 50%;
+    }
+}
+
+@keyframes arg {
+    100%{
+        border: 7px solid #6892d1;
+    }
+}
