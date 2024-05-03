@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Exercise 1 - Class 12</title>
-    <script src="./script.js">
-        window.addEventListener('DOMContentLoaded', () => { })</script>
-    </script>
 </head>
 
 <body>
@@ -18,7 +15,7 @@
     <main>
         <h1>¡Create New SpaceUser!</h1>
         <div class="form-container">
-            <form>
+            <form id="formulary">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" placeholder="Insert your first name">
                 <label for="lastName">Last Name:</label>
@@ -37,12 +34,29 @@
                 <input type="checkbox" name="newsletter">
                 <button class="btn">Submit</button>
             </form>
-            <div>
-                <h1>¡Welcome to the spacewordl!</h1>
-                <p>You recive the important information if you suscribe to my page! </p>
+            <div class="welcome-container">
+                <h1>¡Welcome to the spaceworld!</h1>
+                <p>
+                    You will receive information about the universe and its complexity by subscribing to my page
+                </p><br>
+                <h2>Important!</h2>
+                <ul>
+                    <li>
+                        Your password must be a minimum of 8 characters.
+                        Must include 1 capital letter and 1 number</li>
+
+                    <li>
+                        Your username must have alphanumeric characters
+                    </li>
+                </ul>
+                <div class="logo-container"><span>Create by DraCode</span><img
+                        src="https://pandora-of.vercel.app/assets/91e4c0670e183c77f8bedf559f95144e-D7kwJwl2.svg"
+                        alt="galaxy">
+                </div>
             </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
