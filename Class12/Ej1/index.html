@@ -18,20 +18,29 @@
             <form id="formulary">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" placeholder="Insert your first name">
+                <div id="errorF"></div>
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="lastName" placeholder="Insert your last name">
+                <div id="errorL"></div>
                 <label for="userName">User Name:</label>
                 <input type="text" id="userName" placeholder="Insert your user name">
+                <div id="errorU"></div>
                 <label for="password">Password:</label>
-                <input type="password" required id="password" placeholder="Insert your password">
+                <input type="password" minlength="8" required id="password" placeholder="Insert your password">
+                <div id="errorP"></div>
                 <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" required id="confirmPassword" placeholder="Repeat your password">
+                <input type="password" minlength="8" required id="confirmPassword" placeholder="Repeat your password">
+                <div id="errorCP"></div>
                 <label for="email">Email:</label>
                 <input type="email" required id="email" placeholder="Insert your email">
+                <div id="errorE"></div>
                 <label for="dateBirthday">Birthday:</label>
                 <input type="date" id="dateBirthday" placeholder="Insert your birthday">
+                <div id="errorD"></div>
                 <label for="newsletter">Do you wish to subscribe on this page for more information?:</label>
                 <input type="checkbox" name="newsletter">
+                <label for="newsletter">Do you accept the bases and conditions?:</label>
+                <input type="checkbox" name="newsletter" id="check">
                 <button class="btn">Submit</button>
             </form>
             <div class="welcome-container">
