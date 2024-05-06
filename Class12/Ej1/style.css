@@ -7,7 +7,7 @@
 }
 
 header {
-  background-color: rgb(134, 241, 134);
+  background-color: #86f186;
   margin-bottom: 3em;
 }
 
@@ -42,7 +42,7 @@ main {
 }
 
 .form-container form input {
-  border-color: #ff0000;
+  border-color: #86f186;
   padding: 0.5em;
   border-radius: 20px;
 }
@@ -74,17 +74,3 @@ main {
   cursor: pointer;
 }
 
-#errorF,
-#errorL,
-#errorU,
-#errorP,
-#errorCP,
-#errorD,
-#errorCH,
-#errorE{
-  margin-top: 0.2em;
-  background-color: #ff0000;
-  opacity: 0; 
-  border: 2px solid red;
-  border-radius: 20px;
-}

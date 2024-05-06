@@ -12,34 +12,35 @@
     <header>
         <h1>Exercise 1 - Class 12</h1>
     </header>
+    
     <main>
         <h1>¡Create New SpaceUser!</h1>
         <div class="form-container">
             <form id="formulary">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" placeholder="Insert your first name">
-                <div id="errorF"></div>
+               
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="lastName" placeholder="Insert your last name">
-                <div id="errorL"></div>
+                
                 <label for="userName">User Name:</label>
-                <input type="text" id="userName" placeholder="Insert your user name">
-                <div id="errorU"></div>
+                <input type="text" required id="userName" placeholder="Insert your user name">
+               
                 <label for="password">Password:</label>
-                <input type="password" minlength="8" required id="password" placeholder="Insert your password">
-                <div id="errorP"></div>
+                <input type="password" minlength="8" maxlength="12" required id="password" placeholder="Insert your password">
+              
                 <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" minlength="8" required id="confirmPassword" placeholder="Repeat your password">
-                <div id="errorCP"></div>
+                <input type="password" minlength="8" maxlength="12" id="confirmPassword" placeholder="Repeat your password">
+              
                 <label for="email">Email:</label>
                 <input type="email" required id="email" placeholder="Insert your email">
-                <div id="errorE"></div>
+             
                 <label for="dateBirthday">Birthday:</label>
                 <input type="date" id="dateBirthday" placeholder="Insert your birthday">
-                <div id="errorD"></div>
+               
                 <label for="newsletter">Do you wish to subscribe on this page for more information?:</label>
                 <input type="checkbox" name="newsletter">
-                <label for="newsletter">Do you accept the bases and conditions?:</label>
+                <label for="newsletter">Do you accept the terms and conditions?:</label>
                 <input type="checkbox" name="newsletter" id="check">
                 <button class="btn">Submit</button>
             </form>
