@@ -12,32 +12,34 @@
     <header>
         <h1>Exercise 1 - Class 12</h1>
     </header>
-    
+
     <main>
         <h1>¡Create New SpaceUser!</h1>
         <div class="form-container">
             <form id="formulary">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" placeholder="Insert your first name">
-               
+
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="lastName" placeholder="Insert your last name">
-                
+
                 <label for="userName">User Name:</label>
                 <input type="text" required id="userName" placeholder="Insert your user name">
-               
+
                 <label for="password">Password:</label>
-                <input type="password" minlength="8" maxlength="12" required id="password" placeholder="Insert your password">
-              
+                <input type="password" minlength="8" maxlength="12" required id="password"
+                    placeholder="Insert your password">
+
                 <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" minlength="8" maxlength="12" id="confirmPassword" placeholder="Repeat your password">
-              
+                <input type="password" minlength="8" maxlength="12" id="confirmPassword"
+                    placeholder="Repeat your password">
+
                 <label for="email">Email:</label>
                 <input type="email" required id="email" placeholder="Insert your email">
-             
+
                 <label for="dateBirthday">Birthday:</label>
                 <input type="date" id="dateBirthday" placeholder="Insert your birthday">
-               
+
                 <label for="newsletter">Do you wish to subscribe on this page for more information?:</label>
                 <input type="checkbox" name="newsletter">
                 <label for="newsletter">Do you accept the terms and conditions?:</label>
@@ -49,6 +51,18 @@
                 <p>
                     You will receive information about the universe and its complexity by subscribing to my page
                 </p><br>
+                <div class="modal-container">
+                    <h1>Hello! Click on me for view more space!</h1>
+                    <button class="btn" onclick="window.modal.showModal();">
+                        Show Me!
+                    </button>
+                    <dialog id="modal">
+                        <h1>Hi cibernaut!</h1>
+                        <h3>My name is DraCode!</h3>
+                        <p> Welcome to my page. Come with me to discover the univers.</p>
+                        <button onclick="window.modal.close();">X</button>
+                    </dialog>
+                </div>
                 <h2>Important!</h2>
                 <ul>
                     <li>

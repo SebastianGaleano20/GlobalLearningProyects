@@ -51,7 +51,7 @@ main {
 .welcome-container {
   padding: 1em;
   display: grid;
-
+  
 }
 
 .logo-container {
@@ -68,9 +68,49 @@ main {
 }
 
 .btn {
-  margin-top: 0.3em;
+  margin-top: 0.5em;
   padding: 0.5em;
+  color:#fafafa;
+  background-color: #1515639c;
+  border: 2px solid white;
   border-radius: 20px;
   cursor: pointer;
+  
+  animation: shadow 1s alternate-reverse infinite;
 }
-
+.btn:hover{
+  background-color: #fafafa;
+  color: #151563 ;
+  text-transform: uppercase;
+}
+#modal{
+   background-color: #151563;
+   border: 2px solid #fafafa;
+   border-radius: 20px;
+   color: #fafafa;
+   margin: 200px auto;
+   width: 70vw;
+   padding: 1em;
+   & button{
+    width: 20px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    position: relative;
+    top: -105px;
+    left: 215px
+   };
+   & p{
+    margin-top: 20px
+   }
+}
+#modal::backdrop {
+  background: #aaa8a8e6;
+}
+@keyframes shadow {
+  form{
+    box-shadow: 10px 10px 10px 5px #fafafa ;
+  }
+  to{
+    box-shadow: 0 0 5px 5px #86f186;
+  }
+}
