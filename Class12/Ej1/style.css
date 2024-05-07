@@ -106,6 +106,15 @@ main {
 #modal::backdrop {
   background: #aaa8a8e6;
 }
+#ls-name{
+  display: none;
+  margin-top: 0.5em;
+  background-color: #fafafa;
+  color: red;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+
 @keyframes shadow {
   form{
     box-shadow: 10px 10px 10px 5px #fafafa ;
