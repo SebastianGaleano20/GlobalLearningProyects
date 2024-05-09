@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+  background-color: #86f186;
+  margin-bottom: 3em;
+}
+
+main {
+  width: 90vw;
+  margin: 0 auto;
+  border: 2px solid green;
+  color: #fafafa;
+  border-radius: 20px;
+  background: rgb(16, 30, 120);
+  background: linear-gradient(162deg, rgba(16, 30, 120, 1) 0%, rgba(60, 18, 138, 1) 100%);
+
+  & h1 {
+    margin: 0.3em 0;
+  }
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.form-container form {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form label {
+  margin: 0.5em 0;
+}
+
+.form-container form input {
+  border-color: #86f186;
+  padding: 0.5em;
+  border-radius: 20px;
+}
+
+
+.welcome-container {
+  padding: 1em;
+  display: grid;
+  
+}
+
+.logo-container {
+  & span {
+    display: block;
+  }
+
+  & img {
+    margin-top: 1em;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}
+
+.btn {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  color:#fafafa;
+  background-color: #1515639c;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  
+  animation: shadow 1s alternate-reverse infinite;
+}
+.btn:hover{
+  background-color: #fafafa;
+  color: #151563 ;
+  text-transform: uppercase;
+}
+#modal{
+   background-color: #151563;
+   border: 2px solid #fafafa;
+   border-radius: 20px;
+   color: #fafafa;
+   margin: 200px auto;
+   width: 70vw;
+   padding: 1em;
+   & button{
+    width: 20px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    position: relative;
+    top: -105px;
+    left: 215px
+   };
+   & p{
+    margin-top: 20px
+   }
+}
+#modal::backdrop {
+  background: #aaa8a8e6;
+}
+#ls-name{
+  display: none;
+  margin-top: 0.5em;
+  background-color: #fafafa;
+  color: red;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+#errorN,
+#errorLN,
+#errorP,
+#errorCP,
+#errorCH,
+#errorE,
+#errorUN
+{
+  display: none;
+  margin: 0.2em;
+  font-size: large;
+  color: rgb(255, 63, 63);
+  text-shadow: -3px 2px 4px rgb(5, 1, 1);
+}
+
+@keyframes shadow {
+  form{
+    box-shadow: 10px 10px 10px 5px #fafafa ;
+  }
+  to{
+    box-shadow: 0 0 5px 5px #86f186;
+  }
+}
