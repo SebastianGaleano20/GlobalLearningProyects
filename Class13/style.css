@@ -27,8 +27,6 @@ main {
 
 .form-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-
 }
 
 .form-container form {
@@ -51,9 +49,11 @@ main {
 .welcome-container {
   padding: 1em;
   display: grid;
-  
+  grid-area: 1;
 }
-
+.info-container{
+  margin: 1em;
+}
 .logo-container {
   & span {
     display: block;
@@ -135,5 +135,14 @@ main {
   }
   to{
     box-shadow: 0 0 5px 5px #86f186;
+  }
+}
+
+@media (min-width: 800px){
+  .form-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .welcome-container{
+    grid-area: 1/2;
   }
 }

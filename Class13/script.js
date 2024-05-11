@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     //regex para expresiones regulares
     //Expresion para nombres y apellidos
-    let regex = /^[a-zA-Z\s]*$/;
+    const regex = /^[a-zA-Z\s]*$/;
     //Expresion para contraseñas
-    let regexPass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
+    const regexPass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
     //Expresion para emails
-    let regexEmail = /\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/gi;
+    const regexEmail = /\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/gi;
     //Expresion para Usuarios
-    let regexUser = /[a-zA-Z][a-zA-Z0-9-_]{3,32}/gi;
+    const regexUser = /[a-zA-Z][a-zA-Z0-9-_]{3,32}/gi;
     //Variables
     let firstN = document.getElementById('firstName');
     let firstName = firstN.value.trim();
@@ -32,14 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
     //Funciones
     //Funcion para validar inputs de nombre y apellido
     if (!regex.test(lastName) ) {
-    let errorLN = document.getElementById('errorLN');
+    const errorLN = document.getElementById('errorLN');
       errorLN.style.display = "block";
       return;
     }else{
       errorLN.style.display = "none";
     }
     if(!regex.test(firstName)){
-   let errorN = document.getElementById('errorN');
+   const errorN = document.getElementById('errorN');
       errorN.style.display = "block";
       return;
     }else{
@@ -47,14 +47,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     //Funcion para validar inputs de contraseñas
     if(!regexPass.test(password)){
-      let errorP = document.getElementById('errorP');
+      const errorP = document.getElementById('errorP');
       errorP.style.display = "block";
       return;
     }else{
       errorP.style.display = "none";
     }
     if(password !== confirmPassword){
-      let errorCP = document.getElementById('errorCP');
+      const errorCP = document.getElementById('errorCP');
       errorCP.style.display = "block";
       return;
     }else{
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     //Funcion para validar email
     if(!regexEmail.test(email)){
-   let errorE = document.getElementById('errorE');
+   const errorE = document.getElementById('errorE');
       errorE.style.display = "block";
       return;
     }else{
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     //Funcion para validar nombre de usuario
     if(!regexUser.test(userName)){
-       let errorUN = document.getElementById('errorUN');
+       const errorUN = document.getElementById('errorUN');
       errorUN.style.display = "block";
       return;
     }else{
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     //Funcion para validar si acepta bases y condiciones
       if(!check.checked){  
-        let errorCH = document.getElementById('errorCH');
+        const errorCH = document.getElementById('errorCH');
       errorCH.style.display = "block";
       return;
       }else{

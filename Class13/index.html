@@ -8,97 +8,113 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Exercise 1 - Class 12</title>
+  <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <h1>Exercise 1 - Class 12</h1>
-  </header>
+  <!DOCTYPE html>
+  <html lang="en">
 
-  <main>
-    <h1>¡Create New SpaceUser!</h1>
-    <div class="form-container">
-      <form id="formulary">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" placeholder="Insert your first name">
-        <span id="errorN">Name invalid</span>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise 1 - Class 12</title>
+  </head>
 
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" placeholder="Insert your last name">
-        <span id="errorLN">Last name invalid</span>
+  <body>
+    <header>
+      <h1>Exercise 1 - Class 12</h1>
+    </header>
 
-        <label for="userName">User Name:</label>
-        <input type="text" required id="userName" placeholder="Insert your user name">
-        <span id="errorUN">User name invalid</span>
+    <main>
+      <div class="form-container">
+        <form id="formulary">
 
-        <label for="password">Password:</label>
-        <input 
-        type="password" 
-        minlength="8" 
-        maxlength="12" 
-        required 
+          <h1>¡Create New SpaceUser!</h1>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" placeholder="Insert your first name">
+          <span id="errorN">Name invalid</span>
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" placeholder="Insert your last name">
+          <span id="errorLN">Last name invalid</span>
+
+          <label for="userName">User Name:</label>
+          <input type="text" required id="userName" placeholder="Insert your user name">
+          <span id="errorUN">User name invalid</span>
+
+          <label for="password">Password:</label>
+          <input
+        type="password"
+        minlength="8"
+        maxlength="12"
+        required
         id="password"
         placeholder="Insert your password">
-        <span id="errorP">Password invalid</span>
+          <span id="errorP">Password invalid</span>
 
-        <label for="confirmPassword">Confirm Password:</label>
-        <input type="password" minlength="8" maxlength="12" id="confirmPassword"
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" minlength="8" maxlength="12" id="confirmPassword"
         placeholder="Repeat your password">
-        <span id="errorCP">incorrect password</span>
+          <span id="errorCP">incorrect password</span>
 
-        <label for="email">Email:</label>
-        <input type="email" required id="email" placeholder="Insert your email">
-        <span id="errorE">Email invalid</span>
+          <label for="email">Email:</label>
+          <input type="email" required id="email" placeholder="Insert your email">
+          <span id="errorE">Email invalid</span>
 
-        <label for="dateBirthday">Birthday:</label>
-        <input type="date" id="dateBirthday" placeholder="Insert your birthday">
+          <label for="dateBirthday">Birthday:</label>
+          <input type="date" id="dateBirthday" placeholder="Insert your birthday">
 
-        <label for="newsletter">Do you wish to subscribe on this page for more information?:</label>
-        <input type="checkbox" name="newsletter">
-        <label for="newsletter">Do you accept the terms and conditions?:</label>
-        <input type="checkbox" name="newsletter" id="check">
-        <span id="errorCH">Please aceppt terms and conditions</span>
-        <button class="btn">Submit</button>
-      </form>
-      <div class="welcome-container">
-        <h1>¡Welcome to the spaceworld!</h1>
-        <p>
-          You will receive information about the universe and its complexity by subscribing to my page
-        </p><br>
-        <div class="modal-container">
-          <h1>Hello! Click on me for view more space!</h1>
-          <button class="btn" onclick="window.modal.showModal();">
+          <label for="newsletter">Do you wish to subscribe on this page for more information?:</label>
+          <input type="checkbox" name="newsletter">
+          <label for="newsletter">Do you accept the terms and conditions?:</label>
+          <input type="checkbox" name="newsletter" id="check">
+          <span id="errorCH">Please aceppt terms and conditions</span>
+          <button class="btn">Submit</button>
+        </form>
+        <div class="welcome-container">
+          <h2>¡Welcome to the spaceworld!</h2>
+          <p>
+            You will receive information about the universe and its complexity by subscribing to my page
+          </p><br>
+          <div class="modal-container">
+            <h3>Hello! Click on me for view more space!</h1>
+              <button class="btn" onclick="window.modal.showModal();">
                         Show Me!
                     </button>
-          <dialog id="modal">
-            <h1>Hi cibernaut!</h1>
-            <h3>My name is DraCode!</h3>
-            <p> Welcome to my page. Come with me to discover the univers.</p>
-            <button onclick="window.modal.close();">X</button>
-          </dialog>
-        </div>
-        <h2>Important!</h2>
-        <ul>
-          <li>
-            Your password must be a minimum of 8 characters.
-            Must include 1 capital letter and 1 number</li>
+              <dialog id="modal">
+                <h2>Hi cibernaut!</h2>
+                <h3>My name is DraCode!</h3>
+                <p> Welcome to my page. Come with me to discover the univers.</p>
+                <button onclick="window.modal.close();">X</button>
+              </dialog>
+          </div>
+          <div class="info-container">
+            <h3>Important!</h3>
+            <ul>
+              <li>
+                Your password must be a minimum of 8 characters.
+                Must include 1 capital letter and 1 number</li>
 
-          <li>
-            Your username must have alphanumeric characters
-          </li>
-        </ul>
-        <div class="logo-container"><span>Create by DraCode</span><img
+              <li>
+                Your username must have alphanumeric characters
+              </li>
+            </ul>
+          </div>
+
+          <div class="logo-container"><span>Create by DraCode</span><img
                         src="https://pandora-of.vercel.app/assets/91e4c0670e183c77f8bedf559f95144e-D7kwJwl2.svg"
                         alt="galaxy">
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-  <script src="script.js"></script>
+    </main>
+    <script src="script.js"></script>
+  </body>
+
+  </html>
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
