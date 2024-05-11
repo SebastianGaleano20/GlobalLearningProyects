@@ -1,0 +1,12 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "Exercise 2 Class 14 - Challenge",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["node", "javascript","backend"],
+  "author": "Sebastian Galeano",
+  "license": "ISC"
+}
