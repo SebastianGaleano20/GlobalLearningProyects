@@ -1,0 +1,23 @@
+{
+  "name": "class15",
+  "version": "1.0.0",
+  "description": "Exercise Class 15",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "server",
+    "ejs"
+  ],
+  "author": "Sebastian Galeano",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "16.4.5",
+    "ejs": "3.1.10",
+    "express": "4.19.2"
+  }
+}
