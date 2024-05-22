@@ -4,15 +4,11 @@
   box-sizing: border-box;
   font-family: monospace;
 }
-
-
 body {
   background-image: url(https://w.forfun.com/fetch/57/573155efa39516274275689f3d99aa88.jpeg);
   color: #fafafa;
   text-align: center;
 }
-
-
 header {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fafafa;
@@ -24,8 +20,6 @@ header {
     padding: 0.5rem;
   }
 }
-
-
 .green,
 li {
   margin: 1em;
@@ -36,13 +30,11 @@ li {
   border: 2px solid #80ff60;
   border-radius: 10px;
 }
-
 .green:hover,
 li:hover {
   background-color: #80ff60;
   color: #0c0f01;
 }
-
 section {
   h1 {
     color: #80ff60;
