@@ -1,68 +1,71 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: monospace;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+
+body {
+  background-image: url(https://w.forfun.com/fetch/57/573155efa39516274275689f3d99aa88.jpeg);
+  color: #fafafa;
+  text-align: center;
+}
+
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fafafa;
+  img {
+    border-radius: 50%;
   }
-  
-  
-  body {
-    background-image: url(https://w.forfun.com/fetch/57/573155efa39516274275689f3d99aa88.jpeg);
-    color: #fafafa;
-    text-align: center;
+  p {
+    margin: 1em;
+    padding: 0.5rem;
   }
-  
-  
-  header {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fafafa;
-  
-  
-    img {
-      border-radius: 50%;
-    }
-  
-  
-    p {
-      margin: 10px;
-    }
-  }
-  
-  
-  .green,
-  li {
-    margin: 5px 0px;
+}
+
+
+.green,
+li {
+  margin: 1em;
+  color: #80ff60;
+  font-size: 1.2rem;
+  list-style: none;
+  background-color: #0c0f01;
+  border: 2px solid #80ff60;
+  border-radius: 10px;
+}
+
+.green:hover,
+li:hover {
+  background-color: #80ff60;
+  color: #0c0f01;
+}
+
+section {
+  h1 {
     color: #80ff60;
-    font-size: 1.2em;
-    background-color: #0c0f01;
-    border: 2px solid #80ff60;
-    border-radius: 10px;
   }
-  .green:hover, li:hover{
-    background-color: #80ff60;
-    color: #0c0f01;
-  }
-  section{
-    h1{
-      color: #80ff60;
-    }
-    form{
+  form {
     width: 400px;
-    margin: auto;
-    label{
-      font-size: 1.2em;
+
+    label {
+      font-size: 1.2rem;
       color: #80ff60;
       background-color: #0c0f01;
     }
-    input, textarea{
+
+    input,
+    textarea {
       border-radius: 10px;
       padding: 1rem;
     }
-    }
   }
-  footer{
-    a{
-      color: #80ff60
-    }
+}
+
+footer {
+  a {
+    color: #80ff60
   }
-  
+}

@@ -8,7 +8,7 @@
 - [x] Datos personales 
 - [x] Formulario de contacto
 - [x] Añadir servidor
-- [] Validacion de datos para formulario
-- [] Pagina responsive
-- [] Estilos del cv
-- [] Logo en pestaña
+- [x] Logo en pestaña
+- [ ] Validacion de datos para formulario
+- [ ] Pagina responsive
+- [ ] Estilos del cv
