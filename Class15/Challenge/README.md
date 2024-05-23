@@ -1,12 +1,12 @@
 # Aplicacion PaintWorld
 - [x] Instalar dependencias express socket.io ejs
 - [x] Crear archivo gitignore
-- [ ] Crear servidor express
+- [x] Crear servidor express
 - [ ] Conectar socket.io
-- [ ] Conectar con ejs
+- [x] Conectar con ejs
 - [x] Crear carpetas views - public - assets
 - [x] Crear page index - file css - file script
-- [ ] Conectar servidor con archivos estaticos
+- [x] Conectar servidor con archivos estaticos
 - [ ] Crear estilos para index
 - [ ] Configurar script para el contenedor donde se dibujara
 - [ ] 
