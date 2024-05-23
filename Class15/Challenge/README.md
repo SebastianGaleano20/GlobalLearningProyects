@@ -4,12 +4,12 @@
 - [ ] Crear servidor express
 - [ ] Conectar socket.io
 - [ ] Conectar con ejs
-- [ ] Crear carpetas views - public - assets
-- [ ] Crear page index - file css - file script
+- [x] Crear carpetas views - public - assets
+- [x] Crear page index - file css - file script
 - [ ] Conectar servidor con archivos estaticos
 - [ ] Crear estilos para index
 - [ ] Configurar script para el contenedor donde se dibujara
-- [ ]
+- [ ] 
 - [ ]
 - [ ]
 - [ ]
