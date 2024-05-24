@@ -1,15 +1,30 @@
 # Aplicacion PaintWorld
 - [x] Instalar dependencias express socket.io ejs
 - [x] Crear archivo gitignore
+- [x] Crear carpetas views - public - assets
+- [x] Crear page index - file css - file script
+
+## Servidor
 - [x] Crear servidor express
 - [ ] Conectar socket.io
 - [x] Conectar con ejs
-- [x] Crear carpetas views - public - assets
-- [x] Crear page index - file css - file script
 - [x] Conectar servidor con archivos estaticos
-- [ ] Crear estilos para index
-- [ ] Configurar script para el contenedor donde se dibujara
-- [ ] 
-- [ ]
-- [ ]
-- [ ]
+ [ ] Crear- estilos para index
+
+## Pagina principal
+- [x] Conectar con archivos script y css
+- [x] Añadir icono en pestaña
+
+- [ ] Crear elementos y sus clases:
+    - [ ] Titulo
+    - [ ] 1 contenedor con 2 contenedores de 2 canvas diferentes
+    - [ ] 1 contenedor con imagenes aleatorias
+    - [ ] 1 contenedor con timer
+    - [ ] 1 contenedor con instrucciones
+    - [ ] Footer
+
+## Logica funcional
+- [ ] Configurar canvas
+- [ ] Configurar socket.io
+- [ ] Configurar imagenes aleatorias
+- [ ] Configurar timer
