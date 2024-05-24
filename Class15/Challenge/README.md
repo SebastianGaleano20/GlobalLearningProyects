@@ -9,14 +9,13 @@
 - [ ] Conectar socket.io
 - [x] Conectar con ejs
 - [x] Conectar servidor con archivos estaticos
- [ ] Crear- estilos para index
 
 ## Pagina principal
 - [x] Conectar con archivos script y css
 - [x] Añadir icono en pestaña
-
+- [ ] Crear- estilos para index
 - [ ] Crear elementos y sus clases:
-    - [ ] Titulo
+    - [x] Titulo
     - [ ] 1 contenedor con 2 contenedores de 2 canvas diferentes
     - [ ] 1 contenedor con imagenes aleatorias
     - [ ] 1 contenedor con timer
@@ -24,7 +23,7 @@
     - [ ] Footer
 
 ## Logica funcional
-- [ ] Configurar canvas
+- [x] Configurar canvas
 - [ ] Configurar socket.io
 - [ ] Configurar imagenes aleatorias
 - [ ] Configurar timer
