@@ -1,9 +1,12 @@
+const socket = io();
+
 let mouseDown = false;
 let mouseX = 0;
 let mouseY = 0;
 
 //Configuracion de canva
 window.onload = () => {
+    socket.emit('join', INDEX_ID)
     //Seleccionamos el elemento
     canva = document.querySelector('canvas');
     //Seleccionamos el elemento como contexto 2d para dibujar
@@ -25,6 +28,7 @@ window.onload = () => {
             ctx.moveTo(pMouseX, pMouseY); //Coordenada inicial para el trazado
             ctx.lineTo(mouseX, mouseY); //Coordenada final para el trazado
             ctx.stroke();  //Establece el trazado
+            socket.emit('draw',{INDEX_ID, mPos: {x: mouseX, y:mouseY}, pmPos: {x: pMouseX, y:pMouseY} });
         }
     })
     //Configuracion para estilar el espacio canva
@@ -32,3 +36,11 @@ window.onload = () => {
     //Cofiguracion para establecer el espacio donde se dibujara
     ctx.fillRect(0, 0, canva.width, canva.height);
 }
+
+socket.on('draw', ({mPos,pmPos})=>{
+    ctx.lineWidth = 2;  //Tamaño de la linea a dibujar
+    ctx.strokeStyle = 'green'; //Estilo del mouse
+    ctx.beginPath(); //Inicio del trazado
+    ctx.moveTo(pmPos.x, pmPos.y); //Coordenada inicial para el trazado
+    ctx.lineTo(mPos.x, mPos.y);
+})

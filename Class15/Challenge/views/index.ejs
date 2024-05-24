@@ -6,14 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>PaintWars</title>
+    <script>
+        const INDEX_ID = '<%= indexId %>'; 
+        socket.on('connect', () => {
+            console.log('Connected to server');
+        });
+
+        socket.on('disconnect', () => {
+            console.log('Disconnected from server');
+        });
+    </script>
 </head>
 
 <body>
     <h1>Paint Wars</h1>
     <div class="canv-container">
         <canvas width="300px" height="300px"></canvas>
-        <script src="scripts.js"></script>
+        
     </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
