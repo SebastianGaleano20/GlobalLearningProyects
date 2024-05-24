@@ -8,7 +8,6 @@ window.onload = () => {
     canva = document.querySelector('canvas');
     //Seleccionamos el elemento como contexto 2d para dibujar
     ctx = canva.getContext('2d');
-
     //Eventos del mouse
     addEventListener('mousedown', () => mouseDown = true); //Evento click 
     addEventListener('mouseup', () => mouseDown = false);  //Evento click up
