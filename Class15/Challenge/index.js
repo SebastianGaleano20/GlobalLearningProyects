@@ -28,9 +28,6 @@ io.on('connection', (socket) => {
     socket.on('draw',({INDEX_ID, mPos, pmPos}) =>{
      socket.broadcast.to(INDEX_ID).emit('draw', {mPos, pmPos})
     })
-    socket.on('disconnect', () => {
-        console.log('User disconnected');
-    });
 });
 
 server.listen(PORT, () => {

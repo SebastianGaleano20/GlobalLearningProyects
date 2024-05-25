@@ -7,12 +7,16 @@ let mouseY = 0;
 window.onload = () => {
     //Imagenes random para dibujar
     const imgs = [
+        "https://latiendapokemon.com/wp-content/uploads/2017/04/dibujo_pokemon_saltando_boca_evee-340x340.gif",
+        "https://media.istockphoto.com/id/1158366013/es/vector/p%C3%A1gina-para-colorear-con-un-perro-ilustraci%C3%B3n-vectorial.jpg?s=612x612&w=0&k=20&c=-KVMmyU2-LMikLX0D-i6rPoGcVgrQbKbIj2hd_yDGYU=",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK0vVOqAeq5zDBSajjnp8AJaP43XTmg44HQH1Tu0PWxA&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBarC1wiX-cgZMNiRWxwIvw_U5knr5lILUQNKE7rhtlj-mlAyCR1I7LausMsIZZPPHkCo&usqp=CAU"
+
     ]
     let randomIndex = Math.floor(Math.random() * imgs.length);
     let randomImg = document.getElementById('randomImg');
     randomImg.src = imgs[randomIndex];
-    
+
     socket.emit('join', INDEX_ID)
     //Seleccionamos el elemento
     canva = document.querySelector('canvas');
@@ -50,4 +54,5 @@ socket.on('draw', ({ mPos, pmPos }) => {
     ctx.beginPath(); //Inicio del trazado
     ctx.moveTo(pmPos.x, pmPos.y); //Coordenada inicial para el trazado
     ctx.lineTo(mPos.x, mPos.y);
+    ctx.stroke();
 })
