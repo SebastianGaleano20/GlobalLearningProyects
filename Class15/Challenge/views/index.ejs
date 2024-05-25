@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
     <title>PaintWars</title>
     <script>
-        const INDEX_ID = '<%= indexId %>'; 
+        //Conexion con socket.io y ejs 
+        const INDEX_ID = '<%= indexId %>';
         socket.on('connect', () => {
             console.log('Connected to server');
         });
@@ -19,11 +21,17 @@
 </head>
 
 <body>
-    <h1>Paint Wars</h1>
-    <div class="canv-container">
-        <canvas width="300px" height="300px"></canvas>
-        
-    </div>
+    <main>
+        <h1>Paint Wars</h1>
+        <p>¡Desafia a tus amigos a ver quien dibuja mejor!</p>
+        <div>
+            <img id="randomImg" src="" alt="Imagen a dibujar">
+        </div>  
+        <div class="canv-container">
+            <canvas></canvas>
+        </div>
+    </main>
+    <script src="randomImg.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="scripts.js"></script>
 </body>

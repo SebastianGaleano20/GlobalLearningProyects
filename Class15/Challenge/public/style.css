@@ -6,9 +6,10 @@
     text-align: center;
 }
 .canv-container{
-  padding: 1em;
   background-color: red;
+  padding: 1em;
 }
 canvas{
-    margin: 1em;
+    width: 300px;
+    height: 300px;
 }

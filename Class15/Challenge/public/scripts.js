@@ -1,11 +1,18 @@
 const socket = io();
-
 let mouseDown = false;
 let mouseX = 0;
 let mouseY = 0;
 
 //Configuracion de canva
 window.onload = () => {
+    //Imagenes random para dibujar
+    const imgs = [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBarC1wiX-cgZMNiRWxwIvw_U5knr5lILUQNKE7rhtlj-mlAyCR1I7LausMsIZZPPHkCo&usqp=CAU"
+    ]
+    let randomIndex = Math.floor(Math.random() * imgs.length);
+    let randomImg = document.getElementById('randomImg');
+    randomImg.src = imgs[randomIndex];
+    
     socket.emit('join', INDEX_ID)
     //Seleccionamos el elemento
     canva = document.querySelector('canvas');
@@ -15,7 +22,7 @@ window.onload = () => {
     addEventListener('mousedown', () => mouseDown = true); //Evento click 
     addEventListener('mouseup', () => mouseDown = false);  //Evento click up
     //Evento de movimiento
-    addEventListener('mousemove', e => {  
+    addEventListener('mousemove', e => {
         let pMouseX = mouseX;
         let pMouseY = mouseY;
         let boundingBox = canva.getBoundingClientRect(); //Obtenemos las coordenadas del cliente
@@ -28,7 +35,7 @@ window.onload = () => {
             ctx.moveTo(pMouseX, pMouseY); //Coordenada inicial para el trazado
             ctx.lineTo(mouseX, mouseY); //Coordenada final para el trazado
             ctx.stroke();  //Establece el trazado
-            socket.emit('draw',{INDEX_ID, mPos: {x: mouseX, y:mouseY}, pmPos: {x: pMouseX, y:pMouseY} });
+            socket.emit('draw', { INDEX_ID, mPos: { x: mouseX, y: mouseY }, pmPos: { x: pMouseX, y: pMouseY } });
         }
     })
     //Configuracion para estilar el espacio canva
@@ -37,7 +44,7 @@ window.onload = () => {
     ctx.fillRect(0, 0, canva.width, canva.height);
 }
 
-socket.on('draw', ({mPos,pmPos})=>{
+socket.on('draw', ({ mPos, pmPos }) => {
     ctx.lineWidth = 2;  //Tamaño de la linea a dibujar
     ctx.strokeStyle = 'green'; //Estilo del mouse
     ctx.beginPath(); //Inicio del trazado
