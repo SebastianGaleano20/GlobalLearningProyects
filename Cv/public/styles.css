@@ -5,14 +5,13 @@
   font-family: monospace;
 }
 body {
-  background-image: url(https://w.forfun.com/fetch/57/573155efa39516274275689f3d99aa88.jpeg);
-  color: #fafafa;
+  background-color: #0c0f01;
+ color: #fafafa;
   text-align: center;
 }
 header {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fafafa;
   img {
+    margin: 0.5em;
     border-radius: 50%;
   }
   p {
@@ -30,34 +29,37 @@ li {
   border: 2px solid #80ff60;
   border-radius: 10px;
 }
-.green:hover,
-li:hover {
-  background-color: #80ff60;
-  color: #0c0f01;
-}
 section {
-  h1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+footer{
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    font-size: 0.8rem;
+    text-align: center;
     color: #80ff60;
   }
-  form {
-    width: 400px;
-
-    label {
-      font-size: 1.2rem;
-      color: #80ff60;
-      background-color: #0c0f01;
-    }
-
-    input,
-    textarea {
-      border-radius: 10px;
-      padding: 1rem;
-    }
+  a img{
+    margin: 0.8em;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
   }
 }
 
-footer {
-  a {
-    color: #80ff60
+@media (min-width: 600px) {
+  header{
+    img{
+      width: 200px;
+      height: 200px;
+    }
+  }
+  section{
+    grid-template-columns: 1fr 1fr;
   }
 }
