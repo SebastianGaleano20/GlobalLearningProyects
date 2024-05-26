@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import http from 'http'
 import { v4 as uuidV4 } from 'uuid';
 import { Server as SocketIOServer } from 'socket.io';
+import path from 'path';
 
 const app = express();
 const server = http.createServer(app);
