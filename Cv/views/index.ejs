@@ -19,7 +19,7 @@
         <nav class="nav-container">
             <ul>
                 <li><a href="#about-me">About me</a></li>
-                <li><a href="">Works</a></li>
+                <li><a href="#works">Works</a></li>
                 <li><a href="">Contact me</a></li>
             </ul>
         </nav>
@@ -35,10 +35,15 @@
                 <span>Bienvenido a mi sitio web y portfolio personal</span>
             </div>
         </section>
-        <section class="txt-shadow sect-info">
-            <div id="about-me" class="about-me-container">
+        <section id="about-me" class="txt-shadow sect-info">
+            <div  class="about-me-container">
                 <h3>¡Sobre mi!</h3>
-                <p>Soy FullStack Developer, no tengo preferencia entre Front-end ni Back-end ya que me
+                <div class="btn-container">
+                    <button class="btn" id="data-btn">Datos personales</button>
+                    <button class="btn" id="hobbie-btn">Hobbies</button>
+                    <button class="btn" id="education-btn">Educacion</button>    
+                </div>
+                <p id="txt-me">Soy FullStack Developer, no tengo preferencia entre Front-end ni Back-end ya que me
                     gusta
                     programar y crear tanto como paginas web y API's y que interactuen entre si. Busco diariamente
                     crecer
@@ -46,51 +51,7 @@
                     profesional y poder crear un sistema que ayude al planeta a ser mejor. Tambien me apasiona compartir
                     mis
                     conocimientos a nuevos desarrolladores.</p>
-            </div>
-            <div class="info-container">
-                <h2>Datos Personales</h2>
-                <p class="green">Edad: 27 años <br>
-                    Direccion: Avellaneda, Buenos Aires
-                </p>
-                <p></p>
-            </div>
-            <div class="academy-container">
-                <h2>Informacion Academica</h3>
-                    <h3>Secundario Completo</h3>
-                    <p>Cens 453</p>
-                    <h3>Argentina Programa 4.0 | 2022 - 2023</h3>
-                    <p>Cursos terminados:</p>
-                    <ul>
-                        <li>Front-end Developer | HTML/CSS/JAVASCRIPT</li>
-                        <li>Phyton Developer</li>
-                        <li>ReactJS Developer</li>
-                        <li>Ingles IT | B1</li>
-                    </ul>
-                    <h3>UTN FullStack Avanzado | 2023</h3>
-                    <p>Lenguajes Front-end: </p>
-                    <ul>
-                        <li>HTML | CSS | JAVASCRIPT</li>
-                        <li>ReactJS</li>
-                    </ul>
-                    <p>Lenguajes Back-end: </p>
-                    <ul>
-                        <li>NodeJs</li>
-                        <li>ExpressJs</li>
-                        <li>MongoDB</li>
-                    </ul>
-            </div>
-            <div class="work-container">
-                <h2>Experiencia Laboral</h2>
-                <h4>Barista - Cafe</h4>
-                <p>Soy barista en una cafeteria ubicada en Recoleta. Me ocupo de la apertura del local,
-                    organizacion del salon y
-                    atencion al cliente.</p>
-                <h4>Freelancer</h4>
-                <p>Soy programador freelancer, me encuentro realizando proyectos personales programando
-                    paginas
-                    web. Tambien trabajo
-                    para emprendimientos que requieren una web de su marca.</p>
-            </div>
+               </div>
             <div class="form-container">
                 <h2>Contactame:</h3>
                     <form>
@@ -113,6 +74,7 @@
                 src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitRepo"></a>
         <a target="_blank" href="http://sebasdev-portfolio.vercel.app"><img src="logo.jpeg" alt="logo"></a>
     </footer>
+    <script src="data-function.js"></script>
 </body>
 
 </html>

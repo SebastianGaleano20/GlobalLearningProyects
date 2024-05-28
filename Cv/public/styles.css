@@ -5,7 +5,6 @@
   font-family: "Barlow", sans-serif;
   font-style: italic;
 }
-
 .txt-shadow {
   text-shadow: 3px 3px black;
 }
@@ -16,85 +15,120 @@ body {
   color: #fafafa;
 }
 
-.nav-container{
+.nav-container {
   position: fixed;
   top: 0;
   width: 100vw;
   background-color: #010235;
-  & ul{
+
+  & ul {
     margin: 0.5em;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
-  ul li{
+  ul li {
     display: inline;
     list-style: none;
-    margin: 1em;
   }
 
-  ul li a{
+  ul li a {
     color: #fafafa;
-    margin: em;
-    padding: 1em;
+    margin: 0.5em;
+    text-align: start;
+    font-size: 1rem;
+    padding: 0.5em;
     text-decoration: none;
   }
-  a:hover{
+
+  a:hover {
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #fafafa;
+    box-shadow: 0px 0px 5px #fafafa;
   }
 }
 
 .sect-hello {
-  margin: 8em 2em;
+  margin: 6em 1em;
   border: 5px solid #80ff60;
   box-shadow: 0px 0px 10px #fafafa;
   text-align: center;
-  padding: 1em;
+  padding: 0.5em;
 }
-.logo-container{
+
+.logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  & img{
+
+  & img {
     animation: shadow 2s alternate infinite;
     border-radius: 50%;
     width: 50%;
     height: 50%;
   }
 }
+
 @keyframes shadow {
-  to{
+  to {
     box-shadow: 0px 0px 10px #fafafa;
   }
-  from{
-    
+
+  from {
+
     box-shadow: 0px 0px 30px #fafafa;
   }
 }
-.hello-container{
-  margin: 1em;
-  & p{
+
+.hello-container {
+  margin: 0.5em;
+
+  & p {
     margin: 1em;
   }
-  span{
+
+  span {
     color: #80ff60;
   }
 }
+
 .sect-info {
-  margin: 1em;
   display: grid;
   grid-template-columns: 1fr;
 }
-.about-me-container{
-  margin-top: 3em;
-  padding: 1em;
+
+.about-me-container {
+  border: 2px solid #fafafa;
+  box-shadow: 0 0 5px #80ff60;
+  margin: 3em 1em;
+  padding: 0.3em;
   text-align: center;
-  h3{
-    margin: 3em 0;
+  & h3 {
+    margin: 0.2em;
+    color: #80ff60;
+  }
+  p {
+    padding: 0.5em;
   }
 }
+.btn-container{
+  display: flex;
+  justify-content: space-around;
+}
+.btn{
+  margin: 0.5em ;
+  background-color: rgba(27, 28, 82, 0);
+  border: 2px solid #80ff60;
+  box-shadow: 0 0 5px #fafafa;
+  color: #fafafa;
+  cursor: pointer;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+.btn:hover{
+  color: #80ff60;
+}
+
 footer {
   margin-top: 0.5em;
   display: flex;
