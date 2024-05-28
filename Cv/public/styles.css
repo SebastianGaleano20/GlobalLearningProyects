@@ -9,7 +9,10 @@
 .txt-shadow {
   text-shadow: 3px 3px black;
 }
-
+.box-shadow{
+  border: 5px solid #80ff60;
+  box-shadow: 0px 0px 10px #fafafa;
+}
 body {
   background: rgb(10, 39, 96);
   background: radial-gradient(circle, rgba(10, 39, 96, 1) 0%, rgba(15, 16, 65, 1) 100%);
@@ -51,8 +54,6 @@ body {
 
 .sect-hello {
   margin: 5em 1em;
-  border: 5px solid #80ff60;
-  box-shadow: 0px 0px 10px #fafafa;
   text-align: center;
   padding: 0.5em;
 }
@@ -103,8 +104,8 @@ body {
 }
 
 .about-me-container {
-  border: 2px solid #fafafa;
-  box-shadow: 0 0 5px #80ff60;
+  border: 5px solid #fafafa;
+  box-shadow: 0 0 10px #80ff60;
   margin: 3em 1em;
   padding: 0.3em;
   text-align: center;
@@ -138,6 +139,29 @@ body {
 .btn:hover {
   color: #80ff60;
 }
+
+.form-container{
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & h2{
+    margin: 0.5em;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.2em;
+  }
+  input, textarea{
+    padding: 0.5em;
+    width: 100%;
+    color: #010235;
+    font-weight: bold;
+  }
+}
+
 
 footer {
   margin-top: 0.5em;

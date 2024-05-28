@@ -15,25 +15,26 @@
 </head>
 <script>
     //Funcion para imagen
-const changeImg = () => {
-    document.getElementById('img-logo').src = 'photo.jpeg';
-}
-const restoreImg = () => {
-    document.getElementById('img-logo').src = 'logo.jpeg';
-}
+    const changeImg = () => {
+        document.getElementById('img-logo').src = 'photo.jpeg';
+    }
+    const restoreImg = () => {
+        document.getElementById('img-logo').src = 'logo.jpeg';
+    }
 </script>
+
 <body>
     <header>
         <nav class="nav-container">
             <ul>
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#works">Works</a></li>
-                <li><a href="">Contact me</a></li>
+                <li><a href="#form">Contact me</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="sect-hello">
+        <section class="sect-hello box-shadow">
             <div class="img-container" onmouseover="changeImg()" onmouseout="restoreImg()">
                 <img id="img-logo" src="logo.jpeg" alt="logoPersonal">
             </div>
@@ -67,24 +68,24 @@ const restoreImg = () => {
                     Me gustan mucho los animales y tengo 2 gatos como mascotas llamados Leon y Gamma.
                 </p>
                 <p style="display: none;" class="txt" id="txt-edu">
-                    Termine el secundario, Sigo en proceso de aprendizaje estudiando por cuenta propia. Realice programas como
+                    Termine el secundario, Sigo en proceso de aprendizaje estudiando por cuenta propia. Realice
+                    programas como
                     Argentina Programa 4.0 en el cual aprendi sobre los conceptos basicos de Front-End, ReactJS, Phyton
-                    y Javascripts. Tambien pude abonar un curso sobre Programador web FullStack Avanzado en la UTN la cual finalice en 2023.
+                    y Javascripts. Tambien pude abonar un curso sobre Programador web FullStack Avanzado en la UTN la
+                    cual finalice en 2023.
                 </p>
             </div>
-            <div class="form-container">
-                <h2>Contactame:</h3>
-                    <form>
-                        <label for="name">Nombre:
-                            <input type="text" id="name" placeholder="Ingrese su nombre">
-                        </label><br>
-                        <label for="affair">Asunto:
-                            <input type="text" id="affair" placeholder="Asunto del mensaje">
-                        </label><br>
-                        <label for="message">Mensaje:
-                            <textarea id="message" cols="30" rows="10"></textarea>
-                        </label>
-                    </form>
+            <div id="form" class="form-container box-shadow">
+                <form>
+                    <h2>Contactame:</h3>
+                        <label for="name">Nombre: </label>
+                        <input type="text" id="name" placeholder="Ingrese su nombre">
+                        <label for="affair">Asunto: </label>
+                        <input type="text" id="affair" placeholder="Asunto del mensaje">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" cols="30" rows="10"></textarea>
+                        <button class="btn">Enviar</button>
+                </form>
             </div>
         </section>
     </main>
