@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', ()=>{
+    //Funcion para botones en SobreMi
     const btnData = document.getElementById('data-btn');
     const btnHobbie = document.getElementById('hobbie-btn');
     const btnEdu = document.getElementById('education-btn');
@@ -23,4 +24,5 @@ document.addEventListener('DOMContentLoaded', ()=>{
          })
          info.style.display = 'block'
     }
+
 })
