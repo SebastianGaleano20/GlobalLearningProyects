@@ -13,21 +13,13 @@
         rel="stylesheet">
     <title>Cv</title>
 </head>
-<script>
-    //Funcion para imagen
-    const changeImg = () => {
-        document.getElementById('img-logo').src = 'photo.jpeg';
-    }
-    const restoreImg = () => {
-        document.getElementById('img-logo').src = 'logo.jpeg';
-    }
-</script>
 
 <body>
     <header>
         <nav class="nav-container">
             <ul>
                 <li><a href="#about-me">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#works">Works</a></li>
                 <li><a href="#form">Contact me</a></li>
             </ul>
@@ -75,8 +67,29 @@
                     cual finalice en 2023.
                 </p>
             </div>
+            <article id="skills">
+                <h3>Skills Tegnologicos</h3>
+                <div class="skills-container box-shadow">
+                    <img src="node.png" alt="HTML5">
+                    <!-- <img src="" alt="CSS"> -->
+                    <!-- <img src="" alt="Javascripts"> -->
+                    <!-- <img src="" alt="NodeJS"> -->
+                    <!-- <img src="" alt="ExpressJS"> -->
+                    <!-- <img src="" alt="GIT"> -->
+                </div>
+            </article>
+            <article id="works">
+                <div class="works-container">
+                    <h3>Proyectos</h3>
+                    <div class="proyect-container">
+                        <h4>Pandora App</h4>
+                        <p>Pagina web estatica e-commerce para panificadora</p>
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+            </article>
             <section id="form">
-                <div  class="form-container box-shadow">
+                <div class="form-container box-shadow">
                     <form>
                         <h2>Contactame:</h3>
                             <label for="name">Nombre: </label>
@@ -89,7 +102,6 @@
                     </form>
                 </div>
             </section>
-
         </section>
     </main>
     <footer>
@@ -98,6 +110,7 @@
                 src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitRepo"></a>
         <a target="_blank" href="http://sebasdev-portfolio.vercel.app"><img src="logo.jpeg" alt="logo"></a>
     </footer>
+    <script src="img-function.js"></script>
     <script src="functions.js"></script>
 </body>
 

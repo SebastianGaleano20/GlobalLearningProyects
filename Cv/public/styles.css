@@ -140,6 +140,21 @@ body {
   color: #80ff60;
 }
 
+
+.skills-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1em;
+  text-align: center;
+  & img{
+    border-radius: 50%;
+    border: 2px solid #80ff60;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
 .form-container{
   margin: 3em 1em ;
   padding: 1em;
