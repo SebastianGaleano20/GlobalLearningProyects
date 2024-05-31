@@ -15,6 +15,11 @@
   box-shadow: 0px 0px 10px #fafafa;
 }
 
+.white-shadow{
+  border: 5px solid #fafafa;
+  box-shadow: 0 0 10px #80ff60;
+}
+
 body {
   background: rgb(10, 39, 96);
   background: radial-gradient(circle, rgba(10, 39, 96, 1) 0%, rgba(15, 16, 65, 1) 100%);
@@ -64,8 +69,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   animation: shadow 3s alternate infinite;
   overflow: hidden;
@@ -92,7 +97,7 @@ body {
   margin: 0.5em;
 
   & p {
-    margin: 1em;
+    margin: 0.4em;
   }
 
   span {
@@ -100,17 +105,11 @@ body {
   }
 }
 
-.sect-info {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
 .about-me-container {
-  border: 5px solid #fafafa;
-  box-shadow: 0 0 10px #80ff60;
   margin: 3em 1em;
   padding: 0.3em;
   text-align: center;
+  max-width: 100%;
 
   & h3 {
     margin: 0.2em;
@@ -124,17 +123,19 @@ body {
 
 .btn-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
+  width: 100px;
   margin: 0.2em;
   background-color: rgba(27, 28, 82, 0);
   border: 2px solid #80ff60;
   box-shadow: 0 0 5px #fafafa;
   color: #fafafa;
   cursor: pointer;
-  font-size: 0.8em;
+  font-size: 0.7rem;
   padding: 0.5em;
 }
 
@@ -142,25 +143,50 @@ body {
   color: #80ff60;
 }
 
-
-.skills-container {
+#skills {
   margin: 1em;
   text-align: center;
 }
 
 .logos-container {
-  position: relative;
-  left: 15px;
-  margin: 1em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
+  padding: 1.2em;
+  justify-content: center;
+  align-items: center;
+
   & img {
     border-radius: 50%;
     border: 2px solid #80ff60;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
+  }
+
+  img:hover {
+    transform: scale(1.2);
+  }
+}
+
+.works-container{
+  text-align: center;
+  margin: 2em 1em;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyect-container{
+  margin: 1em;
+  width: 100%;
+  & img{
+    max-width: 100%;
+  }
+  p {
+    margin: 0.5em;
   }
 }
 
@@ -190,7 +216,6 @@ body {
   }
 }
 
-
 footer {
   margin-top: 0.5em;
   display: flex;
@@ -211,8 +236,8 @@ footer {
   }
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   section {
     grid-template-columns: 1fr 1fr;
   }
-}
+} */
