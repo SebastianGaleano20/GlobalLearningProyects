@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import { timeRequest }  from './middlewares/timeMiddle.js';
+import { timeRequest }  from './middlewares/timeRequests.js';
 
 const app = express();
 dotenv.config();
