@@ -1,0 +1,22 @@
+{
+  "name": "class16",
+  "version": "1.0.0",
+  "description": "Ejercicio 1 - Clase 16- Middlewares",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "server",
+    "express",
+    "http",
+    "middleware"
+  ],
+  "author": "Sebastian Galeano",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "16.4.5",
+    "ejs": "3.1.10",
+    "express": "4.19.2"
+  }
+}
