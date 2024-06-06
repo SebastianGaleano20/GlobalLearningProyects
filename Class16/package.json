@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Ejercicio 1 - Clase 16- Middlewares",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "node --watch index.js"
   },
