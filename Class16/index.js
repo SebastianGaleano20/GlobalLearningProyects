@@ -1,5 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import { timeRequest }  from './middlewares/timeMiddle.js';
 
 const app = express();
 dotenv.config();
@@ -11,6 +12,7 @@ app.use(express.static('assets'));
 
 app.set('view engine','ejs');
 
+app.use(timeRequest);
 app.get('/', (_request,response)=>{
     response.render('./index')
 });
