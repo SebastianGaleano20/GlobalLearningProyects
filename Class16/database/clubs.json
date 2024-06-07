@@ -1,66 +1,62 @@
 [
-    {
-      "title": "FootballClub",
-      "amount": 10
-    },
-    {
+  {
       "id": "1",
-      "name": "Club A",
-      "country": "Country A",
+      "name": "River Plate",
+      "country": "Argentina",
       "ranking": "1"
-    },
-    {
+  },
+  {
       "id": "2",
-      "name": "Club B",
-      "country": "Country B",
+      "name": "Barcelona",
+      "country": "Spain",
       "ranking": "2"
-    },
-    {
+  },
+  {
       "id": "3",
-      "name": "Club C",
-      "country": "Country C",
+      "name": "Manchester United",
+      "country": "England",
       "ranking": "3"
-    },
-    {
+  },
+  {
       "id": "4",
-      "name": "Club D",
-      "country": "Country D",
+      "name": "Real Madrid",
+      "country": "Spain",
       "ranking": "4"
-    },
-    {
+  },
+  {
       "id": "5",
-      "name": "Club E",
-      "country": "Country E",
+      "name": "Bayern Munich",
+      "country": "Germany",
       "ranking": "5"
-    },
-    {
+  },
+  {
       "id": "6",
-      "name": "Club F",
-      "country": "Country F",
+      "name": "Juventus",
+      "country": "Italy",
       "ranking": "6"
-    },
-    {
+  },
+  {
       "id": "7",
-      "name": "Club G",
-      "country": "Country G",
+      "name": "Paris Saint-Germain",
+      "country": "France",
       "ranking": "7"
-    },
-    {
+  },
+  {
       "id": "8",
-      "name": "Club H",
-      "country": "Country H",
+      "name": "Liverpool",
+      "country": "England",
       "ranking": "8"
-    },
-    {
+  },
+  {
       "id": "9",
-      "name": "Club I",
-      "country": "Country I",
+      "name": "AC Milan",
+      "country": "Italy",
       "ranking": "9"
-    },
-    {
+  },
+  {
       "id": "10",
-      "name": "Club J",
-      "country": "Country J",
+      "name": "Chelsea",
+      "country": "England",
       "ranking": "10"
-    }
-  ]
+  }
+]
