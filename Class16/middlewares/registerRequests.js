@@ -1,9 +1,9 @@
+import { response } from "express";
+
 export const registerRequest = (request, response, next) => {
-    const Request = (time, method, status) => {
         const timeRequest = Date.now();
         const methodRequest = request.method;
-        const statusRequest = request.status;
-
+        const statusRequest = response.status;
         const requestData = [
             {
               'Date request': timeRequest,
@@ -11,5 +11,6 @@ export const registerRequest = (request, response, next) => {
               'Status request': statusRequest
             }
         ]
-    }
+        console.log(requestData);   
+    next();
 }
