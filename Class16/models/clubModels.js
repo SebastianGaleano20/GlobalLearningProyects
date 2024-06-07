@@ -1,5 +1,4 @@
-import clubs from '../database/clubs.json';
-import fs from 'node:fs';
+import clubs from '../database/clubs.json' assert { type: 'json'};
 
 export const getClubs = () =>{
     try{
