@@ -1,4 +1,5 @@
 # Middlewares y Routers
+Creacion de una api que consume una base de datos local creada con middleware requeridos para el ejercicio de la clase 16.
 ### Listado de tareas a resolver
 - [x] Crear proyecto nodejs
 - [x] Instalar dependencias del proyecto 
