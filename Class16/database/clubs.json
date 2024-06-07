@@ -1,0 +1,66 @@
+[
+    {
+      "title": "FootballClub",
+      "amount": 10
+    },
+    {
+      "id": "1",
+      "name": "Club A",
+      "country": "Country A",
+      "ranking": "1"
+    },
+    {
+      "id": "2",
+      "name": "Club B",
+      "country": "Country B",
+      "ranking": "2"
+    },
+    {
+      "id": "3",
+      "name": "Club C",
+      "country": "Country C",
+      "ranking": "3"
+    },
+    {
+      "id": "4",
+      "name": "Club D",
+      "country": "Country D",
+      "ranking": "4"
+    },
+    {
+      "id": "5",
+      "name": "Club E",
+      "country": "Country E",
+      "ranking": "5"
+    },
+    {
+      "id": "6",
+      "name": "Club F",
+      "country": "Country F",
+      "ranking": "6"
+    },
+    {
+      "id": "7",
+      "name": "Club G",
+      "country": "Country G",
+      "ranking": "7"
+    },
+    {
+      "id": "8",
+      "name": "Club H",
+      "country": "Country H",
+      "ranking": "8"
+    },
+    {
+      "id": "9",
+      "name": "Club I",
+      "country": "Country I",
+      "ranking": "9"
+    },
+    {
+      "id": "10",
+      "name": "Club J",
+      "country": "Country J",
+      "ranking": "10"
+    }
+  ]
