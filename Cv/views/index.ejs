@@ -30,15 +30,17 @@
             <div class="img-container" onmouseover="changeImg()" onmouseout="restoreImg()">
                 <img id="img-logo" src="logo.jpeg" alt="logoPersonal">
             </div>
-            <div class="hello-container txt-shadow">
+            <div class="hello-container">
                 <h2>Sebastian Galeano</h2>
                 <span>DraCode - FullStack Developer</span>
-                <p>¡Hola, soy Sebastian. Programo como freelancer hace 2 años en proyectos personales!</p>
+                <p>¡Hola, soy Sebastian!. Realizo paginas web y servidores con diferentes tegnologias.
+                    Programo como freelancer hace 2 años en proyectos personales.
+                </p>
                 <span>Bienvenido a mi sitio web y portfolio personal</span>
             </div>
         </section>
-        <section id="about-me" class="txt-shadow sect-info">
-            <div class="about-me-container white-shadow">
+        <section id="about-me" class="sect-info">
+            <article class="about-me-container white-shadow">
                 <h3>¡Sobre mi!</h3>
                 <div class="btn-container">
                     <button class="btn" id="data-btn">Datos</button>
@@ -66,7 +68,7 @@
                     y Javascripts. Tambien pude abonar un curso sobre Programador web FullStack Avanzado en la UTN la
                     cual finalice en 2023.
                 </p>
-            </div>
+            </article>
             <article id="skills">
                 <div class="skills-container box-shadow">
                     <h3>Skills Tegnologicos</h3>
@@ -80,40 +82,44 @@
                     </div>
                 </div>
             </article>
-            <article id="works">
-                <div class="works-container white-shadow">
-                    <h2>Proyectos web </h3>
-                    <div class="proyect-container">
-                        <h3>Pandora App</h4>
-                        <p>Pagina web estatica e-commerce para panificadora</p>
-                        <a  target="_blank" href="https://pandora-of.vercel.app/"><img class="box-shadow" src="pandora.jpeg" alt="Pandora Img"></a>
-                    </div>
-                    <div class="proyect-container">
-                       <h3>Portfolio Personal</h4>
-                       <p>Primer portfolio personal realizado en 2023 luego de realizar el curso en UTN</p>
-                       <a target="_blank" href="https://sebasdev-portfolio.vercel.app/"><img class="box-shadow" src="portf.jpeg" alt="Portfolio img"></a>
-                    </div>
-                    <div class="proyect-container">
-                        <h3>Proyecto examen GlobalLearning</h4>
-                        <p>Pagina web estatica para el curso de Programacion FullStack en GlobalLearning</p>
-                        <a target="_blank" href="https://per-didos-encon-trados.netlify.app/"><img class="box-shadow" src="perd-enc.jpeg" alt="Page img"></a>
-                    </div>
-                </div>
-            </article>
-            <section id="form">
-                <div class="form-container box-shadow">
-                    <form>
-                        <h2>Contactame:</h3>
-                            <label for="name">Nombre: </label>
-                            <input type="text" id="name" placeholder="Ingrese su nombre">
-                            <label for="affair">Asunto: </label>
-                            <input type="text" id="affair" placeholder="Asunto del mensaje">
-                            <label for="message">Mensaje:</label>
-                            <textarea id="message" cols="30" rows="10"></textarea>
-                            <button class="btn">Enviar</button>
-                    </form>
-                </div>
+        </section>
+        <article id="works">
+            <section class="works-container white-shadow">
+                <h2>Proyectos web </h2>
+                <article class="proyect-container">
+                    <h3>Pandora App</h3>
+                    <p>Pagina web estatica e-commerce para panificadora</p>
+                    <a target="_blank" href="https://pandora-of.vercel.app/"><img class="box-shadow" src="pandora.jpeg"
+                            alt="Pandora Img"></a>
+                </article>
+                <article class="proyect-container">
+                    <h3>Portfolio Personal</h3>
+                    <p>Primer portfolio personal realizado en 2023 luego de realizar el curso en UTN</p>
+                    <a target="_blank" href="https://sebasdev-portfolio.vercel.app/"><img class="box-shadow"
+                            src="portf.jpeg" alt="Portfolio img"></a>
+                </article>
+                <article class="proyect-container">
+                    <h3>Proyecto examen GlobalLearning</h3>
+                    <p>Pagina web estatica para el curso de Programacion FullStack en GlobalLearning</p>
+                    <a target="_blank" href="https://per-didos-encon-trados.netlify.app/"><img class="box-shadow"
+                            src="perd-enc.jpeg" alt="Page img"></a>
+                </article>
             </section>
+        </article>
+        <section id="form">
+            <div class="form-container box-shadow">
+                <form>
+                    <h2>Contactame:</h3>
+                        <label for="name">Nombre: </label>
+                        <input type="text" id="name" placeholder="Ingrese su nombre">
+                        <label for="affair">Asunto: </label>
+                        <input type="text" id="affair" placeholder="Asunto del mensaje">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" cols="30" rows="10"></textarea>
+                        <button class="btn">Enviar</button>
+                </form>
+            </div>
+        </section>
         </section>
     </main>
     <footer>

@@ -6,9 +6,7 @@
   font-style: italic;
 }
 
-.txt-shadow {
-  text-shadow: 3px 3px black;
-}
+/* Estilos sombreados */
 
 .box-shadow {
   border: 5px solid #80ff60;
@@ -26,6 +24,7 @@ body {
   color: #fafafa;
 }
 
+/* Estilos de Header */
 .nav-container {
   position: fixed;
   top: 0;
@@ -33,6 +32,7 @@ body {
   background-color: #010235;
   border: 0px solid white;
   box-shadow: 0x 0px 20px #fafafa;
+
   & ul {
     margin: 0.5em;
     display: flex;
@@ -59,10 +59,16 @@ body {
   }
 }
 
+main {
+  display: grid;
+}
+
+/* Estilos para vista principal */
 .sect-hello {
-  margin: 5em 1em;
+  margin: 1em;
   text-align: center;
-  padding: 0.5em;
+  font-size: 1.2em;
+  padding: 1em;
 }
 
 .img-container {
@@ -70,8 +76,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
   border-radius: 50%;
   animation: shadow 3s alternate infinite;
   overflow: hidden;
@@ -106,8 +112,9 @@ body {
   }
 }
 
+/* Estilos para las secciones */
 .about-me-container {
-  margin: 3em 1em;
+  margin: 1em;
   padding: 0.3em;
   text-align: center;
   max-width: 100%;
@@ -157,6 +164,7 @@ body {
   justify-content: center;
   align-items: center;
   justify-items: center;
+
   & img {
     border-radius: 50%;
     border: 2px solid #80ff60;
@@ -172,7 +180,7 @@ body {
 
 .works-container {
   text-align: center;
-  margin: 2em 1em;
+  margin: 1em;
   padding: 0.5em;
   display: flex;
   flex-direction: column;
@@ -183,16 +191,15 @@ body {
 .proyect-container {
   margin: 1em;
   width: 100%;
-
   & img {
     max-width: 100%;
   }
-
   p {
     margin: 0.5em;
   }
 }
 
+/* Estilos del formulario */
 .form-container {
   margin: 3em 1em;
   padding: 1em;
@@ -219,6 +226,7 @@ body {
   }
 }
 
+/* Estilos del footer */
 footer {
   margin-top: 0.5em;
   display: flex;
@@ -243,17 +251,35 @@ footer {
   .nav-container {
     height: 100vh;
     width: 50px;
-    
-    & ul{
+
+    & ul {
       flex-direction: column;
-    } 
+    }
+
     ul li {
       margin-top: 2.5em;
       writing-mode: vertical-rl;
     }
   }
-  main{
+
+  main {
     margin-left: 3em;
+    grid-template-columns: 2fr 1fr;
   }
-  
+
+  .sect-hello {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  #works{
+    grid-area: 2 / 1 / 3 / -1;
+  }
+  .img-container {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+  }
 }
