@@ -15,23 +15,13 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav-container">
-            <ul>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#form">Contact me</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
         <section class="sect-hello box-shadow">
             <div class="img-container" onmouseover="changeImg()" onmouseout="restoreImg()">
                 <img id="img-logo" src="logo.jpeg" alt="logoPersonal">
             </div>
             <div class="hello-container">
-                <h2>Sebastian Galeano</h2>
+                <h1>Sebastian Galeano</h1>
                 <span>DraCode - FullStack Developer</span>
                 <p>¡Hola, soy Sebastian!. Realizo paginas web y servidores con diferentes tegnologias.
                     Programo como freelancer hace 2 años en proyectos personales.
@@ -39,9 +29,9 @@
                 <span>Bienvenido a mi sitio web y portfolio personal</span>
             </div>
         </section>
-        <section id="about-me" class="sect-info">
+        <section class="sect-info">
             <article class="about-me-container white-shadow">
-                <h3>¡Sobre mi!</h3>
+                <h2>¡Sobre mi!</h2>
                 <div class="btn-container">
                     <button class="btn" id="data-btn">Datos</button>
                     <button class="btn" id="hobbie-btn">Hobbies</button>
@@ -69,61 +59,58 @@
                     cual finalice en 2023.
                 </p>
             </article>
-            <article id="skills">
-                <div class="skills-container box-shadow">
-                    <h3>Skills Tegnologicos</h3>
-                    <div class="logos-container">
-                        <img src="html.jpg" alt="HTML5">
-                        <img src="css.jpg" alt="CSS">
-                        <img src="js.jpg" alt="Javascripts">
-                        <img src="nodejs.png" alt="NodeJS">
-                        <img src="express.png" alt="ExpressJS">
-                        <img src="git.jpg" alt="GIT">
-                    </div>
+            <article class="skills-container box-shadow">
+                <h2>Skills Tegnologicos</h2>
+                <div class="logos-container">
+                    <img src="html.jpg" alt="HTML5">
+                    <img src="css.jpg" alt="CSS">
+                    <img src="js.jpg" alt="Javascripts">
+                    <img src="nodejs.png" alt="NodeJS">
+                    <img src="express.png" alt="ExpressJS">
+                    <img src="git.jpg" alt="GIT">
                 </div>
             </article>
         </section>
-        <article id="works">
-            <section class="works-container white-shadow">
-                <h2>Proyectos web </h2>
-                <article class="proyect-container">
-                    <h3>Pandora App</h3>
-                    <p>Pagina web estatica e-commerce para panificadora</p>
-                    <a target="_blank" href="https://pandora-of.vercel.app/"><img class="box-shadow" src="pandora.jpeg"
-                            alt="Pandora Img"></a>
-                </article>
-                <article class="proyect-container">
-                    <h3>Portfolio Personal</h3>
-                    <p>Primer portfolio personal realizado en 2023 luego de realizar el curso en UTN</p>
-                    <a target="_blank" href="https://sebasdev-portfolio.vercel.app/"><img class="box-shadow"
-                            src="portf.jpeg" alt="Portfolio img"></a>
-                </article>
-                <article class="proyect-container">
-                    <h3>Proyecto examen GlobalLearning</h3>
-                    <p>Pagina web estatica para el curso de Programacion FullStack en GlobalLearning</p>
-                    <a target="_blank" href="https://per-didos-encon-trados.netlify.app/"><img class="box-shadow"
-                            src="perd-enc.jpeg" alt="Page img"></a>
-                </article>
-            </section>
-        </article>
-        <section id="form">
-            <div class="form-container box-shadow">
-                <form>
-                    <h2>Contactame:</h3>
-                        <label for="name">Nombre: </label>
-                        <input type="text" id="name" placeholder="Ingrese su nombre">
-                        <label for="affair">Asunto: </label>
-                        <input type="text" id="affair" placeholder="Asunto del mensaje">
-                        <label for="message">Mensaje:</label>
-                        <textarea id="message" cols="30" rows="10"></textarea>
-                        <button class="btn">Enviar</button>
-                </form>
-            </div>
+        <section class="works-container white-shadow">
+            <h2>Proyectos web</h2>
+         <section class="proyects-container">
+            <article class="proyect-container">
+                <h3>Pandora App</h3>
+                <p>Pagina web estatica e-commerce para panificadora</p>
+                <a target="_blank" href="https://pandora-of.vercel.app/"><img class="box-shadow" src="pandora.jpeg"
+                        alt="Pandora Img"></a>
+            </article>
+            <article class="proyect-container">
+                <h3>Portfolio Personal</h3>
+                <p>Primer portfolio personal realizado en 2023 luego de realizar el curso en UTN</p>
+                <a target="_blank" href="https://sebasdev-portfolio.vercel.app/"><img class="box-shadow"
+                        src="portf.jpeg" alt="Portfolio img"></a>
+            </article>
+            <article class="proyect-container">
+                <h3>Proyecto examen GlobalLearning</h3>
+                <p>Pagina web estatica para el curso de Programacion FullStack en GlobalLearning</p>
+                <a target="_blank" href="https://per-didos-encon-trados.netlify.app/"><img class="box-shadow"
+                        src="perd-enc.jpeg" alt="Page img"></a>
+            </article>
+         </section>   
+           
+        </section>
+        <section class="form-container box-shadow">
+            <form>
+                <h2>Contactame:</h3>
+                    <label for="name">Nombre: </label>
+                    <input type="text" id="name" placeholder="Ingrese su nombre">
+                    <label for="affair">Asunto: </label>
+                    <input type="text" id="affair" placeholder="Asunto del mensaje">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+                    <button class="btn">Enviar</button>
+            </form>
         </section>
         </section>
     </main>
     <footer>
-        <p>Create by DraCode - Sebastian Galeano</p>
+        <p>Create by DraCode <br> Sebastian Galeano</p>
         <a target="_blank" href="https://github.com/SebastianGaleano20"><img
                 src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitRepo"></a>
         <a target="_blank" href="http://sebasdev-portfolio.vercel.app"><img src="logo.jpeg" alt="logo"></a>
